@@ -18,6 +18,7 @@ use Traversable;
  * @implements \ArrayAccess<TKey, TValue>
  * @implements \Illuminate\Support\Enumerable<TKey, TValue>
  */
+#[\AllowDynamicProperties]
 class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerable
 {
     /**
